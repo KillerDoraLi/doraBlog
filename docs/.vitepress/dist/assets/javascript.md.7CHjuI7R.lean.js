@@ -1,0 +1,1 @@
+import{_ as t,c as a,o as e}from"./chunks/framework.CFOPr1pP.js";const m=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"javascript.md","filePath":"javascript.md"}'),r={name:"javascript.md"};function s(c,o,n,p,i,_){return e(),a("div")}const f=t(r,[["render",s]]);export{m as __pageData,f as default};
