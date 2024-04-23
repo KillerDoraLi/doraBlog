@@ -22,7 +22,7 @@ concurrency:
 
 jobs:
   # 构建工作
-  build: 
+  build:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
