@@ -5,7 +5,7 @@ export default defineConfig({
   // 站点级选项
   title: "Dora Blog",
   description: "哆啦技术输出初体验",
-  base: '/repo/',
+  base: '/doraBlog/',
   // 主题级选项
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
