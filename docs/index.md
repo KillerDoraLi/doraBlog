@@ -17,8 +17,8 @@ hero:
       text: TypeScript
       link: /typescript
     - theme: alt
-      text: JavaScript
-      link: /javascript
+      text: Vue3
+      link: /Vue3/index
 
 features:
   - title: 深夜日记
