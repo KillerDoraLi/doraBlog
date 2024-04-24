@@ -9,16 +9,21 @@ hero:
   actions:
     - theme: brand
       text: ES 6
-      link: /es6
+      link: /ES6/let_const
+    - theme: alt
+      text: JavaScript
+      link: /javascript
+    - theme: alt
+      text: TypeScript
+      link: /typescript
     - theme: alt
       text: JavaScript
       link: /javascript
 
 features:
-  - title: ES6
-    details: 关于 ES6
-  - title: Javascript
-    details: 关于 JS
-  - title: Typescript
-    details: 关于 TS
+  - title: 深夜日记
+    details: 负面向
+  - title: 自渡鸡汤
+    details: 正面向
+  
 ---
