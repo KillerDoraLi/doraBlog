@@ -86,3 +86,85 @@ String.raw`Hi\u000A!`;
 ### 3. **codePointAt()**
 
 Javascript 内部，字符以 UTF-16 的格式存储，每个字符固定为 2 个字节，对于那些需要 4 个字节存储的字符（unicode 码点大于 0xFFFF 的字符），Javascript 会认为它们是两个字符。
+
+```js
+// 𠮷 的码点为 0x20BB7;
+var s = "𠮷";
+s.length // 2
+```
+
+### 4. **normalize()**
+normalize方法可以接受一个参数来指定normalize的方式，参数的四个可选值如下。
+
+  - NFC，默认参数，表示“标准等价合成”（Normalization Form Canonical Composition），返回多个简单字符的合成字符。所谓“标准等价”指的是视觉和语义上的等价。
+  - NFD，表示“标准等价分解”（Normalization Form Canonical Decomposition），即在标准等价的前提下，返回合成字符分解的多个简单字符。
+  - NFKC，表示“兼容等价合成”（Normalization Form Compatibility Composition），返回合成字符。所谓“兼容等价”指的是语义上存在等价，但视觉上不等价，比如“囍”和“喜喜”。（这只是用来举例，normalize方法不能识别中文。）
+  - NFKD，表示“兼容等价分解”（Normalization Form Compatibility Decomposition），即在兼容等价的前提下，返回合成字符分解的多个简单字符。
+
+```js
+  '\u004F\u030C'.normalize('NFC').length // 1
+  '\u004F\u030C'.normalize('NFD').length // 2
+```
+上面代码表示，NFC参数返回字符的合成形式，NFD参数返回字符的分解形式。
+
+不过，normalize方法目前不能识别三个或三个以上字符的合成。这种情况下，还是只能使用正则表达式，通过 Unicode 编号区间判断。
+
+### 5. **includes()**
+返回布尔值，表示是否找到了参数字符串
+
+```js
+  "foo".includes("o"); // true
+  "foo".includes("x"); // false
+```
+
+### 6. **startsWith()** 和 **endsWith()**
+返回布尔值，表示是否以参数字符串开头/结尾。
+
+```js
+  "foo".startsWith("f"); // true
+  "foo".startsWith("x"); // false
+  "foo".endsWith("o"); // true
+  "foo".endsWith("x"); // false
+```
+
+### 7. **repeat()**
+返回一个新字符串，表示将原字符串重复 n 次。
+
+```js
+  "foo".repeat(3); // "foofoofoo"
+```
+
+### 8. **padStart()** 和 **padEnd()**
+返回一个新字符串，表示根据指定的长度将原字符串左侧填充或右侧填充。
+```js
+  "foo".padStart(5, "x"); // "xxfoo"
+  "foo".padEnd(5, "x"); // "fooxx"
+```
+
+### 9. **trimStart()** 和 **trimEnd()**
+返回一个新字符串，表示去除原字符串左侧或右侧的空白字符。
+```js
+  " foo ".trimStart(); // "foo "
+  " foo ".trimEnd(); // " foo"
+```
+
+### 10. **matchAll()**
+返回一个类似数组的迭代器，表示字符串中满足正则表达式的所有匹配项。
+
+```js
+  "foo".matchAll(/\w/g); // ["f", "o", "o"]
+```
+
+### 11. **replaceAll()**
+返回一个新字符串，表示将所有满足正则表达式的匹配项替换为新的字符串。
+
+```js
+  "foo".replaceAll("o", "x"); // "fxx"
+```
+
+### 12. **at()**
+返回字符串中指定位置的字符。
+
+```js
+  "foo".at(1); // "o"
+```
