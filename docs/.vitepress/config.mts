@@ -18,9 +18,25 @@ export default defineConfig({
     sidebar: [
       {
         text: 'ES6',
+        collapsed: true,
         items: [
           { text: 'let 和 const', link: '/ES6/let_const' },
           { text: '模版字符串', link: '/ES6/template_strings' },
+        ]
+      },
+      {
+        text: 'TypeScript',
+        collapsed: true,
+        // items: [
+        //   { text: '基础类型', link: '/TypeScript/basic_types' },
+        //   { text: '高级类型', link: '/TypeScript/advanced_types' },
+        // ]
+      },
+      {
+        text: 'Vue3',
+        collapsed: true,
+        items: [
+          { text: 'index', link: '/Vue3/index' },
         ]
       }
     ],
