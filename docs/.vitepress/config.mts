@@ -21,7 +21,9 @@ export default defineConfig({
         collapsed: true,
         items: [
           { text: 'let 和 const', link: '/ES6/let_const' },
-          { text: '模版字符串', link: '/ES6/template_strings' },
+          // { text: '模版字符串', link: '/ES6/template_strings' },
+          { text: '箭头函数', link: '/ES6/arrow_function' },
+          { text: '字符串', link: '/ES6/string' },
         ]
       },
       {
