@@ -27,6 +27,13 @@ export default defineConfig({
         ]
       },
       {
+        text: 'Git',
+        collapsed: true,
+        items: [
+          { text: '关于变更', link: '/Git/git_change' },
+        ]
+      },
+      {
         text: 'TypeScript',
         collapsed: true,
         // items: [
