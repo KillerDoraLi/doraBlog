@@ -17,6 +17,13 @@ export default defineConfig({
 
     sidebar: [
       {
+        text: 'JavaScript',
+        collapsed: true,
+        items: [
+          { text: '原型/原型链', link: '/Javascript/prototype' },
+        ]
+      },
+      {
         text: 'ES6',
         collapsed: true,
         items: [
