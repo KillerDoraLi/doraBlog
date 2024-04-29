@@ -21,6 +21,7 @@ export default defineConfig({
         collapsed: true,
         items: [
           { text: '原型/原型链', link: '/Javascript/prototype' },
+          { text: '词法作用域和动态作用域', link: '/Javascript/scope' },
         ]
       },
       {
