@@ -6,6 +6,7 @@ hero:
   name: "Dora Blog"
   text: "知识要成体系"
   tagline: 哆啦进阶之路，非功利性学习
+  image: /assets/logo.svg
   actions:
     - theme: brand
       text: ES 6

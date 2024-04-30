@@ -10,6 +10,7 @@ export default defineConfig({
   lastUpdated: true,
   // 主题级选项
   themeConfig: {
+    logo: '/public/logo/logo.png',
     // https://vitepress.dev/reference/default-theme-config
     nav: [
       { text: 'Home', link: '/' },
@@ -18,7 +19,6 @@ export default defineConfig({
     search: {
       provider: 'local'
     },
-
     sidebar: [
       {
         text: 'JavaScript',
@@ -27,6 +27,7 @@ export default defineConfig({
           { text: '原型/原型链', link: '/Javascript/prototype' },
           { text: '词法作用域和动态作用域', link: '/Javascript/scope' },
           { text: '执行上下文栈', link: '/Javascript/context' },
+          { text: '变量对象', link: '/Javascript/variable_object' },
         ]
       },
       {
@@ -62,7 +63,6 @@ export default defineConfig({
         ]
       }
     ],
-
     socialLinks: [
       { icon: 'github', link: 'https://github.com/KillerDoraLi' }
     ]
