@@ -7,6 +7,7 @@ export default defineConfig({
   title: "Dora Blog",
   description: "哆啦技术输出初体验",
   base: '/doraBlog/',
+  lastUpdated: true,
   // 主题级选项
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
@@ -14,6 +15,9 @@ export default defineConfig({
       { text: 'Home', link: '/' },
       // { text: 'Examples', link: '/markdown-examples' }
     ],
+    search: {
+      provider: 'local'
+    },
 
     sidebar: [
       {
@@ -22,6 +26,7 @@ export default defineConfig({
         items: [
           { text: '原型/原型链', link: '/Javascript/prototype' },
           { text: '词法作用域和动态作用域', link: '/Javascript/scope' },
+          { text: '执行上下文栈', link: '/Javascript/context' },
         ]
       },
       {
