@@ -20,6 +20,9 @@ hero:
     - theme: alt
       text: Vue3
       link: /Vue3/index
+    - theme: alt
+      text: Golang
+      link: /Golang/basic
 
 features:
   - title: 深夜日记

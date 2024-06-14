@@ -10,7 +10,7 @@ export default defineConfig({
   lastUpdated: true,
   // 主题级选项
   themeConfig: {
-    logo: '/public/logo/logo.png',
+    logo: '/public/logo/logo.svg',
     // https://vitepress.dev/reference/default-theme-config
     nav: [
       { text: 'Home', link: '/' },
@@ -28,6 +28,7 @@ export default defineConfig({
           { text: '词法作用域和动态作用域', link: '/Javascript/scope' },
           { text: '执行上下文栈', link: '/Javascript/context' },
           { text: '变量对象', link: '/Javascript/variable_object' },
+          { text: '作用域链', link: '/Javascript/scope_chain' },
         ]
       },
       {
@@ -45,21 +46,29 @@ export default defineConfig({
         collapsed: true,
         items: [
           { text: '关于变更', link: '/Git/git_change' },
+          { text: 'cherry pick', link: '/Git/git_cherry_pick' },
         ]
       },
       {
         text: 'TypeScript',
         collapsed: true,
-        // items: [
-        //   { text: '基础类型', link: '/TypeScript/basic_types' },
-        //   { text: '高级类型', link: '/TypeScript/advanced_types' },
-        // ]
+        items: [
+          { text: '基础', link: '/TypeScript/basic' },
+          // { text: '高级类型', link: '/TypeScript/advanced_types' },
+        ]
       },
       {
         text: 'Vue3',
         collapsed: true,
         items: [
           { text: 'index', link: '/Vue3/index' },
+        ]
+      },
+      {
+        text: 'Golang',
+        collapsed: true,
+        items: [
+          { text: '基础类型', link: '/Golang/basic' },
         ]
       }
     ],
