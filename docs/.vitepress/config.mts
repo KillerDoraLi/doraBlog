@@ -45,6 +45,7 @@ export default defineConfig({
         text: 'Git',
         collapsed: true,
         items: [
+          { text: '命令速查', link: '/Git/git_overview' },
           { text: '关于变更', link: '/Git/git_change' },
           { text: 'cherry pick', link: '/Git/git_cherry_pick' },
         ]
