@@ -73,6 +73,8 @@ export default defineConfig({
           { text: '内置类型和函数', link: '/Golang/type_function' },
           { text: 'int 函数和 main 函数', link: '/Golang/int_main' },
           { text: '命令', link: '/Golang/command' },
+          { text: '运算符', link: '/Golang/operator' },
+          { text: '下划线', link: '/Golang/underline' },
         ]
       }
     ],
