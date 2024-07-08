@@ -75,6 +75,9 @@ export default defineConfig({
           { text: '命令', link: '/Golang/command' },
           { text: '运算符', link: '/Golang/operator' },
           { text: '下划线', link: '/Golang/underline' },
+          { text: '变量和常量', link: '/Golang/variable_constant' },
+          { text: '基本类型', link: '/Golang/basic_type' },
+          { text: '数组', link: '/Golang/array' },
         ]
       }
     ],
