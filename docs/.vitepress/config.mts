@@ -79,6 +79,7 @@ export default defineConfig({
           { text: '基本类型', link: '/Golang/basic_type' },
           { text: '数组', link: '/Golang/array' },
           { text: '切片', link: '/Golang/slice' },
+          { text: '指针', link: '/Golang/pointer' },
         ]
       }
     ],
