@@ -78,6 +78,7 @@ export default defineConfig({
           { text: '变量和常量', link: '/Golang/variable_constant' },
           { text: '基本类型', link: '/Golang/basic_type' },
           { text: '数组', link: '/Golang/array' },
+          { text: '切片', link: '/Golang/slice' },
         ]
       }
     ],
